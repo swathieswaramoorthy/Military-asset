@@ -17,7 +17,7 @@ export default function Assignments() {
   const fetchAssignments = async (statusFilter = "All") => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/assignments?status=${statusFilter}`
+        `https://military-asset-management-81rp.onrender.com/api/assignments?status=${statusFilter}`
       );
       setAssignments(res.data);
     } catch (err) {
@@ -34,7 +34,7 @@ export default function Assignments() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/assignments/${editingId}`,
+          `https://military-asset-management-81rp.onrender.com/api/assignments/${editingId}`,
           form
         );
         setEditingId(null);
