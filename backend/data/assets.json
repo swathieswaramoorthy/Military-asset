@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Rifle M16",
+    "type": "Weapon",
+    "base": "Base 1",
+    "date": "2025-08-01T00:00:00Z",
+    "openingBalance": 100,
+    "closingBalance": 120,
+    "purchases": 30,
+    "transferIn": 10,
+    "transferOut": 20,
+    "assignedAssets": 50,
+    "expendedAssets": 5
+  },
+  {
+    "name": "Armored Vehicle",
+    "type": "Vehicle",
+    "base": "Base 1",
+    "date": "2025-08-03T00:00:00Z",
+    "openingBalance": 10,
+    "closingBalance": 12,
+    "purchases": 5,
+    "transferIn": 2,
+    "transferOut": 3,
+    "assignedAssets": 7,
+    "expendedAssets": 1
+  },
+  {
+    "name": "Rifle M16",
+    "type": "Weapon",
+    "base": "Base 2",
+    "date": "2025-08-05T00:00:00Z",
+    "openingBalance": 80,
+    "closingBalance": 90,
+    "purchases": 15,
+    "transferIn": 5,
+    "transferOut": 10,
+    "assignedAssets": 40,
+    "expendedAssets": 2
+  },
+  {
+    "name": "Jeep",
+    "type": "Vehicle",
+    "base": "Base 2",
+    "date": "2025-08-07T00:00:00Z",
+    "openingBalance": 5,
+    "closingBalance": 6,
+    "purchases": 2,
+    "transferIn": 1,
+    "transferOut": 1,
+    "assignedAssets": 3,
+    "expendedAssets": 0
+  },
+  {
+    "name": "Sniper Rifle",
+    "type": "Weapon",
+    "base": "Base 3",
+    "date": "2025-08-10T00:00:00Z",
+    "openingBalance": 50,
+    "closingBalance": 55,
+    "purchases": 10,
+    "transferIn": 5,
+    "transferOut": 5,
+    "assignedAssets": 25,
+    "expendedAssets": 3
+  }
+]
