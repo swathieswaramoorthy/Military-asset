@@ -321,7 +321,7 @@ export default function Dashboard() {
 
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">📊 Military Assest Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">📊 Military Asset Dashboard</h1>
 
       {/* Filters */}
       <div className="flex flex-wrap gap-4 mb-6 bg-white p-4 rounded-lg shadow">
