@@ -466,52 +466,64 @@ function Navbar({ user, setUser }) {
       </div>
 
       {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-gray-900 text-white flex flex-col md:hidden shadow-lg z-40">
-          {links.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center gap-2 px-4 py-3 border-b border-gray-700 transition ${
-                location.pathname === link.to
-                  ? "text-blue-400 font-semibold"
-                  : "hover:bg-gray-700 hover:text-blue-400"
-              }`}
-            >
-              {link.icon}
-              <span>{link.label}</span>
-            </Link>
-          ))}
+     {/* Mobile menu */}
+{mobileMenuOpen && (
+  <div className="absolute top-0 left-0 w-full h-screen bg-gray-900 text-white flex flex-col items-start p-6 z-50 transition-transform duration-300">
+    {/* Close button */}
+    <button
+      onClick={() => setMobileMenuOpen(false)}
+      className="self-end mb-4 p-2 rounded-md hover:bg-gray-700"
+    >
+      ✕
+    </button>
 
-          {user ? (
-            <button
-              onClick={handleLogout}
-              className="w-full text-left px-4 py-3 hover:bg-red-600 transition"
-            >
-              Logout
-            </button>
-          ) : (
-            <div className="flex flex-col">
-              <Link
-                to="/login"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-3 hover:bg-gray-700 transition"
-              >
-                Login
-              </Link>
-              <Link
-                to="/signup"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-3 hover:bg-gray-700 transition"
-              >
-                Signup
-              </Link>
-            </div>
-          )}
-        </div>
-      )}
-    </nav>
+    {/* Menu links */}
+    {links.map((link) => (
+      <Link
+        key={link.to}
+        to={link.to}
+        onClick={() => setMobileMenuOpen(false)}
+        className={`flex items-center gap-2 px-4 py-3 w-full rounded-md transition ${
+          location.pathname === link.to
+            ? "text-blue-400 font-semibold"
+            : "hover:bg-gray-700 hover:text-blue-400"
+        }`}
+      >
+        {link.icon}
+        <span>{link.label}</span>
+      </Link>
+    ))}
+
+    {/* Auth buttons */}
+    {user ? (
+      <button
+        onClick={handleLogout}
+        className="mt-4 w-full text-left px-4 py-3 bg-red-500 rounded-md hover:bg-red-600 transition"
+      >
+        Logout
+      </button>
+    ) : (
+      <div className="flex flex-col w-full mt-4">
+        <Link
+          to="/login"
+          onClick={() => setMobileMenuOpen(false)}
+          className="px-4 py-3 rounded-md hover:bg-gray-700 transition"
+        >
+          Login
+        </Link>
+        <Link
+          to="/signup"
+          onClick={() => setMobileMenuOpen(false)}
+          className="px-4 py-3 rounded-md bg-blue-600 hover:bg-blue-700 transition mt-2"
+        >
+          Signup
+        </Link>
+      </div>
+    )}
+  </div>
+)}
+
+        </nav>
   );
 }
 
@@ -571,5 +583,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
