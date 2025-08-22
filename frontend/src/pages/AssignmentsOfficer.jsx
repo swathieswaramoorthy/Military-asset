@@ -6,7 +6,7 @@ export default function AssignmentsOfficer() {
 
   const fetchAssignments = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/assignments");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/assignments");
       setAssignments(res.data);
     } catch (err) {
       console.error(err);

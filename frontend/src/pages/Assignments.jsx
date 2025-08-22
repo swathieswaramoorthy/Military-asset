@@ -39,7 +39,7 @@ export default function Assignments() {
         );
         setEditingId(null);
       } else {
-        await axios.post("http://localhost:5000/api/assignments", form);
+        await axios.post("https://military-asset-management-81rp.onrender.com/api/assignments", form);
       }
       setForm({
         asset: "",
@@ -68,7 +68,7 @@ export default function Assignments() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this record?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/assignments/${id}`);
+      await axios.delete(`https://military-asset-management-81rp.onrender.com/api/assignments/${id}`);
       fetchAssignments();
     } catch (err) {
       console.error(err);
@@ -77,7 +77,7 @@ export default function Assignments() {
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.patch(`http://localhost:5000/api/assignments/${id}`, {
+      await axios.patch(`https://military-asset-management-81rp.onrender.com/api/assignments/${id}`, {
         status,
       });
       fetchAssignments();

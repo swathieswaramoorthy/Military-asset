@@ -209,7 +209,7 @@ export default function Purchases() {
 
   const fetchPurchases = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/purchases");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/purchases");
       setPurchases(res.data);
     } catch (err) {
       console.error(err);
@@ -235,12 +235,12 @@ export default function Purchases() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/purchases/${editingId}`,
+          `https://military-asset-management-81rp.onrender.com/api/purchases/${editingId}`,
           payload
         );
         setEditingId(null);
       } else {
-        await axios.post("http://localhost:5000/api/purchases", payload);
+        await axios.post("https://military-asset-management-81rp.onrender.com/api/purchases", payload);
       }
 
       setForm({
@@ -272,7 +272,7 @@ export default function Purchases() {
       return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/purchases/${id}`);
+      await axios.delete(`https://military-asset-management-81rp.onrender.com/api/purchases/${id}`);
       fetchPurchases();
     } catch (err) {
       console.error(err);

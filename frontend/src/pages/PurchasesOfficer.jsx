@@ -73,7 +73,7 @@ export default function ExpenditureOfficer() {
 
   const fetchExpenditures = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/expenditures");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/expenditures");
       setExpenditures(res.data);
     } catch (err) {
       console.error(err);

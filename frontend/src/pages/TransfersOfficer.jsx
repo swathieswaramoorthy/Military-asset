@@ -7,7 +7,7 @@ export default function TransfersOfficer() {
 
   const fetchTransfers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/transfers");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/transfers");
       setTransfers(res.data);
     } catch (err) {
       console.error(err);

@@ -158,7 +158,7 @@ export default function ExpenditureCommander() {
   // Fetch Expenditures
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/expenditures");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/expenditures");
       setExpenditures(res.data);
     } catch (err) {
       console.error(err);
@@ -178,7 +178,7 @@ export default function ExpenditureCommander() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/expenditures", form);
+      await axios.post("https://military-asset-management-81rp.onrender.com/api/expenditures", form);
       setForm({ category: "", amount: "", description: "", date: "" });
       setShowForm(false);
       fetchData();

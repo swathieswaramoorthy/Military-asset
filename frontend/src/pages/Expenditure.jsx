@@ -203,7 +203,7 @@ export default function Expenditure() {
   // Fetch expenditures
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/expenditures");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/expenditures");
       setData(res.data);
     } catch (err) {
       console.error(err);
@@ -224,12 +224,12 @@ export default function Expenditure() {
       let res;
       if (editingId) {
         res = await axios.put(
-          `http://localhost:5000/api/expenditures/${editingId}`,
+          `https://military-asset-management-81rp.onrender.com/api/expenditures/${editingId}`,
           formData
         );
         setEditingId(null);
       } else {
-        res = await axios.post("http://localhost:5000/api/expenditures", formData);
+        res = await axios.post("https://military-asset-management-81rp.onrender.com/api/expenditures", formData);
       }
 
       setData((prev) => {
@@ -250,7 +250,7 @@ export default function Expenditure() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this record?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/expenditures/${id}`);
+      await axios.delete(`https://military-asset-management-81rp.onrender.com/api/expenditures/${id}`);
       setData(data.filter((item) => item._id !== id));
     } catch (err) {
       console.error(err);

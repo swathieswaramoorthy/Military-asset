@@ -165,7 +165,7 @@ export default function PurchasesCommander() {
 
   const fetchPurchases = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/purchases");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/purchases");
       setPurchases(res.data);
     } catch (err) {
       console.error(err);
@@ -189,7 +189,7 @@ export default function PurchasesCommander() {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/purchases", payload);
+      await axios.post("https://military-asset-management-81rp.onrender.com/api/purchases", payload);
       setForm({
         assetName: "",
         type: "Weapon",

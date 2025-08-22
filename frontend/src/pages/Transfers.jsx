@@ -200,7 +200,7 @@ export default function Transfers() {
 
   const fetchTransfers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/transfers");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/transfers");
       setTransfers(res.data);
     } catch (err) {
       console.error(err);
@@ -222,10 +222,10 @@ export default function Transfers() {
 
     try {
       if (editingId) {
-        await axios.put(`http://localhost:5000/api/transfers/${editingId}`, payload);
+        await axios.put(`https://military-asset-management-81rp.onrender.com/api/transfers/${editingId}`, payload);
         setEditingId(null);
       } else {
-        await axios.post("http://localhost:5000/api/transfers", payload);
+        await axios.post("https://military-asset-management-81rp.onrender.com/api/transfers", payload);
       }
 
       setForm({ asset: "", quantity: 0, fromBase: "Base 1", toBase: "Base 2", date: "" });
@@ -249,7 +249,7 @@ export default function Transfers() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this transfer?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/transfers/${id}`);
+      await axios.delete(`https://military-asset-management-81rp.onrender.com/api/transfers/${id}`);
       fetchTransfers();
     } catch (err) {
       console.error(err);

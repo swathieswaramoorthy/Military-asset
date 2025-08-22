@@ -46,7 +46,7 @@ export default function Signup({ setUser }) {
         assignedBase: form.role === "Base Commander" ? form.assignedBase.trim() : "",
       };
 
-      const res = await axios.post("http://localhost:5000/api/auth/signup", payload);
+      const res = await axios.post("https://military-asset-management-81rp.onrender.com/api/auth/signup", payload);
 
       // store user and move to dashboard
       localStorage.setItem("user", JSON.stringify(res.data));

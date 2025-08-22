@@ -138,7 +138,7 @@ export default function AssignmentsCommander() {
 
   const fetchAssignments = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/assignments");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/assignments");
       setAssignments(res.data);
     } catch (err) {
       console.error(err);
@@ -152,7 +152,7 @@ export default function AssignmentsCommander() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/assignments", form);
+      await axios.post("https://military-asset-management-81rp.onrender.com/api/assignments", form);
       setForm({
         asset: "",
         quantity: 0,

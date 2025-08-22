@@ -148,7 +148,7 @@ export default function TransfersCommander() {
 
   const fetchTransfers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/transfers");
+      const res = await axios.get("https://military-asset-management-81rp.onrender.com/api/transfers");
       setTransfers(res.data);
     } catch (err) {
       console.error(err);
@@ -164,7 +164,7 @@ export default function TransfersCommander() {
     if (!form.date) return alert("Select a date");
 
     try {
-      await axios.post("http://localhost:5000/api/transfers", {
+      await axios.post("https://military-asset-management-81rp.onrender.com/api/transfers", {
         ...form,
         date: new Date(form.date).toISOString(),
       });
