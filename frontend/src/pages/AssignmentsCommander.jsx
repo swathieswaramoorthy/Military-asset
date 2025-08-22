@@ -169,13 +169,13 @@ export default function AssignmentsCommander() {
   return (
     <div className="p-8 bg-gray-50 min-h-screen">
       <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-         📋 Assignments
+         Assignments
       </h1>
 
       {/* Assignment Form */}
       <div className="max-w-5xl mx-auto mb-10 p-6 bg-white rounded-xl shadow-md border border-gray-200">
         <h2 className="text-xl font-semibold text-gray-700 mb-4">
-          ➕ Assign Asset
+           Assign Asset
         </h2>
         <form
           onSubmit={handleSubmit}

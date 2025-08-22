@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935a"
+  },
+  "name": "M16 Rifle",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 50,
+  "date": "2025-08-01T10:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935b"
+  },
+  "name": "Armored Vehicle",
+  "type": "Vehicle",
+  "base": "Base 2",
+  "quantity": 5,
+  "date": "2025-07-25T09:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935c"
+  },
+  "name": "5.56mm Ammunition",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 5000,
+  "date": "2025-07-10T12:30:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935d"
+  },
+  "name": "Military Radios",
+  "type": "Weapon",
+  "base": "Base 3",
+  "quantity": 20,
+  "date": "2025-06-30T14:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935e"
+  },
+  "name": "Helicopter Fuel",
+  "type": "Vehicle",
+  "base": "Base 2",
+  "quantity": 1000,
+  "date": "2025-06-15T08:45:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad229935f"
+  },
+  "name": "Body Armor Set",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 30,
+  "date": "2025-06-05T11:15:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad2299360"
+  },
+  "name": "First Aid Kits",
+  "type": "Weapon",
+  "base": "Base 3",
+  "quantity": 100,
+  "date": "2025-05-30T10:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad2299361"
+  },
+  "name": "Recon Drone",
+  "type": "Vehicle",
+  "base": "Base 2",
+  "quantity": 3,
+  "date": "2025-05-15T09:30:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad2299362"
+  },
+  "name": "Machine Guns",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 15,
+  "date": "2025-05-01T12:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a5a3142f31a4cad2299363"
+  },
+  "name": "Field Generator",
+  "type": "Weapon",
+  "base": "Base 3",
+  "quantity": 2,
+  "date": "2025-04-20T13:45:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "68a6a1f7b15c06daace8ec92"
+  },
+  "name": "M17 Rifle",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 7,
+  "date": {
+    "$date": "2025-08-20T18:30:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a83c4a7bdbf2f4a6b9c67d"
+  },
+  "name": "riflee",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 3,
+  "date": {
+    "$date": "2025-08-07T18:30:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a83df77bdbf2f4a6b9c683"
+  },
+  "name": "wer",
+  "type": "Weapon",
+  "base": "Base 1",
+  "quantity": 0,
+  "date": {
+    "$date": "2025-08-06T18:30:00.000Z"
+  },
+  "__v": 0
+}]

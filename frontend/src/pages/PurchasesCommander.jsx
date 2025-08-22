@@ -206,7 +206,7 @@ export default function PurchasesCommander() {
   return (
     <div className="p-8 bg-gray-50 min-h-screen">
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">
-        🛒 Purchases
+        Purchases
       </h1>
 
       {/* Form Section */}
